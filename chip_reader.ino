@@ -3,12 +3,8 @@ void setup() {
   Serial.begin(9600);
 
   for(int i = 11; i > 1; i--){
-    //pinMode(i, INPUT);
     pinMode(i, INPUT_PULLUP); // Enable internal pull-up resistor on pin
   }
-
-  // I made 0 power because I have the chip reader upside down on the board
-  //pinMode(0, OUTPUT); // power
 }
 
 void loop() {
